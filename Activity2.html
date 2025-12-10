@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Activity 2</title>
+</head>
+
+<body>
+    <h1>Async Functions</h1>
+    <p id="result"></p>
+    <script>
+        async function add(a, b)
+        {
+            let results = await a + b;
+            display(results);
+        }
+
+        function display(some)
+        {
+            document.getElementById("result").innerHTML = "The sum is: " + some;
+        }
+
+        add(5, 10);
+    </script>
+</body>
+
+</html>

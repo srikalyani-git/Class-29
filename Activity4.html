@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Activity 4</title>
+</head>
+
+<body>
+    <h1>Callbacks in JS</h1>
+    <p id="result"></p>
+    <script>
+        function mydisplay(value)
+        {
+            document.getElementById("result").innerHTML = value;
+        }
+
+        function mycalc(num1, num2, callback)
+        {
+            var sum = num1 + num2;
+            callback(sum);
+        }
+
+        mycalc(10, 15, mydisplay);
+    </script>
+</body>
+
+</html>
