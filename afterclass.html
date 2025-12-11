@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>After Class Activity</title>
+</head>
+
+<body>
+    <h1>Async functions</h1>
+    <p id="result"></p>
+    <script>
+        async function calc(a, b)
+        {
+            var res = await a / b;
+            printres(res);
+        }
+
+        function printres(some)
+        {
+            document.getElementById("result").innerHTML = "the final value is:" + some;
+        }
+
+        calc(70, 5)
+    </script>
+
+</html>
